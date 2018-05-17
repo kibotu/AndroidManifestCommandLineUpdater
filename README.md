@@ -1,4 +1,4 @@
-# AndroidManifest.xml CommandLine Updater  [![Licence](https://img.shields.io/badge/licence-Apache%202-blue.svg)](https://raw.githubusercontent.com/kibotu/KalmanRx/master/LICENSE)
+# AndroidManifest.xml CommandLine Updater  [![Licence](https://img.shields.io/badge/licence-Apache%202-blue.svg)](https://raw.githubusercontent.com/kibotu/KalmanRx/master/LICENSE) [![Gradle Version](https://img.shields.io/badge/gradle-4.7-green.svg)](https://docs.gradle.org/current/release-notes) [![Kotlin](https://img.shields.io/badge/kotlin-1.2.41-green.svg)]
 
 # How to use
 
