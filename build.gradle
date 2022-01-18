@@ -2,7 +2,7 @@ group 'net.kibotu'
 version '1.0.0'
 
 buildscript {
-    ext.kotlin_version = '1.2.41'
+    ext.kotlin_version = '1.6.0'
 
     repositories {
         mavenCentral()
@@ -24,7 +24,6 @@ repositories {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
 
 sourceSets {
@@ -33,10 +32,16 @@ sourceSets {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions {
+        jvmTarget = "11"
+        useIR = true
+    }
 }
-compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
 }
 
 mainClassName = "net.kibotu.androidmanifestcommandlineupdater.MainKt"
